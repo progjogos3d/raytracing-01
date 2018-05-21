@@ -15,8 +15,8 @@ Para executar os exemplos da aula você precisará:
  
  ## Bibliotecas
 
-Utilizaremos as bibliotecas [JOML](https://github.com/JOML-CI/JOML), que contém as classes matemáticas e 
-a [LWJGL](https://www.lwjgl.org/), que dá acesso as bibliotecas OpenGL, GLFW e stb. 
+Esse projeto também depende da biblioteca matemática [JOML](https://github.com/JOML-CI/JOML), configurada no pom.xml, mas não utiliza qualquer biblioteca 
+3D, como a OpenGL. Todo desenho será realizado pixel-a-pixel na imagem.
 
 # Sobre este projeto
 
@@ -25,11 +25,8 @@ Trata-se dos arquivos necessários para acompanhar a aula em sala.
 
 Nele, você encontrará algumas classes, já programadas. 
 
-* Uma classe chamada Canvas, que encapsula o desenho de em uma BufferedImage;
-* Classes para guardar informações sobre a luz (Light), materiais (Material) e sobre os feixes (Ray);
-* Classes representando as primitivas Plane e Sphere.
-* Uma classe chamada Scene, contendo alguns objetos já definidos.
-* Uma classe chamada Raytracer, vazia. É nela que iremos trabalhar.
-
-Esse projeto também depende da biblioteca matemática JOML, configurada no pom.xml, mas não utiliza qualquer biblioteca 
-3D, como a OpenGL. Todo desenho será realizado pixel-a-pixel na imagem.
+* Uma classe chamada [Raytracer](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Raytracer.java), vazia. É nela que iremos trabalhar.
+* Uma classe chamada [Canvas](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Canvas.java), que encapsula o desenho de em uma BufferedImage;
+* Classes para guardar informações sobre a luz ([Light](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Light.java)), materiais ([Material](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Material.java)) e sobre os feixes ([Ray](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Ray.java));
+* Classes representando as primitivas [Plane](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/primitives/Plane.java) e [Sphere](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/primitives/Sphere.java).
+* Uma classe chamada [Scene](https://github.com/progjogos3d/raytracing-01/blob/master/src/br/pucpr/raytracer/Scene.java), contendo alguns objetos já definidos.
